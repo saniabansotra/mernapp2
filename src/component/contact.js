@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-const Home = () => {
-  const [users, setusers] = useState([]);
+const Contact = () => {
+  // const [users, setusers] = useState([]);
   const [firstname, setfirstname] = useState("");
   const [email, setemail] = useState("");
   const [lastname, setlastname] = useState("");
@@ -25,4 +25,4 @@ const Home = () => {
     </>
   );
 };
-export default Home;
+export default Contact;
