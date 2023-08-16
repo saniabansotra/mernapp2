@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 const Home = () => {
   const [users, setusers] = useState([]);
   const [firstname, setfirstname] = useState("");
@@ -6,22 +7,9 @@ const Home = () => {
   const [lastname, setlastname] = useState("");
   return (
     <>
-      <input
-        type="text"
-        value={firstname}
-        onChange={(e) => setfirstname(e.target.value)}
-      />
-      <input
-        type="text"
-        value={lastname}
-        onChange={(e) => setlastname(e.target.value)}
-      />
-      <input
-        type="email"
-        value={email}
-        onChange={(e) => setemail(e.target.value)}
-      />
-      {}
+      <h1>Hii There, I'm Sania Bansotra</h1>
+      <h3>I am into Web Develop</h3>
+      <button>About Me <ArrowDownwardIcon/></button>
     </>
   );
 };
