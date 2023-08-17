@@ -4,13 +4,14 @@ import Education from "./component/education";
 import About from "./component/about";
 import Contact from "./component/contact";
 import Navbar from "./component/navbar";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
     <>
-      <Router>
+      <Home />
+      {/* <Router>
         <Routes>
           <Route exact path="/home" element={<Home />} />
           <Route exact path="/contact" element={<Contact />} />
@@ -18,7 +19,7 @@ function App() {
           <Route exact path="/navbar" element={<Navbar />} />
           <Route exact path="/education" element={<Education />} />
         </Routes>
-      </Router>
+      </Router> */}
     </>
   );
 }
